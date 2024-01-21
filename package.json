@@ -1,0 +1,27 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": " node js beginning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhanu-priyaa/Nodejs.git"
+  },
+  "keywords": [
+    "Bhanu",
+    "Rathore"
+  ],
+  "author": "Bhanu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhanu-priyaa/Nodejs/issues"
+  },
+  "homepage": "https://github.com/bhanu-priyaa/Nodejs#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "simple-node-logger": "^21.8.12"
+  }
+}
