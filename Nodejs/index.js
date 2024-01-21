@@ -72,12 +72,11 @@
 //console.log("Package.json");
  
 // Make a simple api
-
-
-
 const http = require('http');
  http.createServer((req,resp)=>{
 resp.writeHead(200,{'Content-Type':'application\json'});
 resp.write(JSON.stringify({name:'Bhanu',email:'bhanu06@gmail.com'}));
 resp.end();
- }).listen(3000);
+ }).listen(3000); 
+
+//  
