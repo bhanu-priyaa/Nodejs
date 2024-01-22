@@ -1,7 +1,7 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": " node js beginning",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,9 @@
     "url": "git+https://github.com/bhanu-priyaa/Nodejs.git"
   },
   "keywords": [
-    "Bhanu",
-    "Rathore"
+    "code"
   ],
-  "author": "Bhanu",
+  "author": "Bhanu Rathore",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bhanu-priyaa/Nodejs/issues"
