@@ -169,3 +169,37 @@ waitingData.then((data)=>{
     b=data;
     console.log(a+b)  
 })
+//use of  express js  
+
+// const express= require('express');
+// const app =express();
+
+// app.get('',(req,res)=>{
+//     res.send('Hello,this is Home Page');
+
+// });
+
+// app.get('/About',(req,res)=>{
+//     res.send('Hello,this is About Page');
+
+// });
+// //server
+// app.listen(3000);
+
+// how to show req data comes
+
+//  const express= require('express');
+//  const app =express();
+
+//  app.get('',(req,res)=>{
+//     console.log("data sent by browser =>>>",req.query.name)
+//      res.send("welcome,"+req.query.name);
+
+//  });
+
+//  app.get('/About',(req,res)=>{
+//      res.send('Hello,this is About Page');
+
+//  });
+//  //server
+//  app.listen(3000);
