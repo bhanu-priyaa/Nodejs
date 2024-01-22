@@ -79,4 +79,93 @@ resp.write(JSON.stringify({name:'Bhanu',email:'bhanu06@gmail.com'}));
 resp.end();
  }).listen(3000); 
 
-//  
+  //console.log(process.argv); //argument vector
+
+//this is how we can create and remove files
+// const fs = require('fs');
+
+// const input = process.argv;
+// if (input[2]=='add')
+// {
+//     fs.writeFileSync(input[3],input[4])
+// }
+// else if(input[2]=='remove')
+// {
+//     fs.unlinkSync(input[3])
+// }
+// else{
+//     console.log("invalid input")
+// }
+
+//const { dir } = require('console');
+// const fs = require('fs');
+// const path = require('path');
+// const dirPath= path.join(__dirname,'files');
+// console.warn(dirPath)
+// loop
+// for(i=0;i<5;i++)
+//  {
+//     //for creating 5 files into 1 folder
+//     fs.writeFileSync(dirPath+"/bhanu"+i+".txt","a simple text file"); // create pnly one file because same name created only one file. overide so we have to create hello 1,2,3 etc (dynamic) +i+ or ${i}
+//     //fs.writeFileSync(`bhanu${i}.txt`,"a simple text file");
+// }  
+
+// fs.readdir(dirPath,(err,files)=>{
+//     //console.warn(files)   // in array
+//     files.forEach((item)=>{    // for making diff diff files
+//         console.log("File name is",item)
+
+//     })
+// })
+
+// crud with file system
+
+// const fs= require('fs');
+// const path = require('path');
+// const dirpath= path.join(__dirname,'crud');
+// const filepath= `${dirpath}/apple.txt`;
+
+
+// //fs.writeFileSync(filepath,'This is a simple text file');
+
+//Asynchronous
+
+//console.log("start exe...")
+
+//console.log("logic exe...") // 2 seconds
+
+// setTimeout(()=>{
+//     console.log("logic exe...")
+// },2000)
+// console.log("logic exe...")
+
+// console.log("complete exe...") // doesn't wait for second one
+
+//drawback
+
+// let a=10;
+// let b=20;
+
+// setTimeout(()=>{
+//     b=20;
+// },2000)  // it takes time
+// console.log(a+b) //bcz it executes first we can handle it by using call backs or promises
+
+// how to resolve this drawback . earlier people uses call backs but now mostly people use promises or async await
+let a=10;
+let b=20;
+
+// setTimeout(()=>{
+//     b=20;
+// },2000)  // it takes time
+let waitingData= new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        b=30;
+        resolve(30)
+    },2000) 
+})
+
+waitingData.then((data)=>{
+    b=data;
+    console.log(a+b)  
+})
